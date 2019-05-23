@@ -6,11 +6,19 @@
 <meta name = "viewport" content = "width=device-width, initial-scale=1">
 
 
-<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+<!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  -->
+<!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+<!-- <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+	
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  
+<link rel = "stylesheet" href = "css/style.css"></script> 
 	
 	<script>
 		$(document).ready(function myFunction() {
@@ -26,129 +34,36 @@
 </head>
 <body onload = "myFunction()">
 
-<style>
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
 
-#my_maps {
-			    position:absolute;
-				width:800px;
-				height:500px;
-				margin-top:80px;
-  				margin-right: auto;
-				/*margin: 100px 510px 30px;*/
-				border:1px solid #606060;
-			}
-						
-			#p_prldr{
-			position: fixed;
-			left: 0;
-			top: 0;
-			right:0;
-			bottom:0;
-			/*background:rgb(62, 61, 61);background:rgb(175,178,174);*/
-			background:rgb(52, 58, 64);
-			z-index: 30;}
- 
-			.contpre small{font-size:25px;}
-			 
-			.contpre{
-			width: 250px;
-			height: 100px;
-			position: absolute;
-			left: 50%;top: 48%;
-			margin-left:-125px;
-			margin-top:-75px;
-			color:#fff;
-			font-size:20px;
-			letter-spacing:-2px;
-			text-align:center;
-			line-height:35px;}
-			
-			<!-- #p_prldr .txt_anm { -->
-			<!-- position: absolute; -->
-			<!-- width: 41px; -->
-			<!-- height: 41px; -->
-			<!-- background-size:41px;     -->
-			<!-- margin: -16px 0 0 -16px;} -->
-
-
-</style>
    <!-- боковая навигация in -->
  
  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" id="sideNav"> -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-none d-lg-block">
+        <span class="d-block d-lg-none text-info">Google
+		  <span class="text-secondary">Maps</span></span>
+		
+		
+		<span class="d-none d-lg-block">
 			<h1 class = "text-info">Google</h1>
 			<h1><span class="text-secondary">Maps</span></h1><br>
 			<img class="img-profile rounded-circle" src="images/SQPE8818.jpg" alt="" style="width:350px;height:250px;">
       </span>
     </a>
-    <div class="collapse navbar-collapse">
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+	</button>
+    <div class="collapse navbar-collapse" id = "navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
 		   <!-- <a class="nav-link js-scroll-trigger"> -->
-          <a class="nav-link text-info" href="index.html">Резюме</a>
+          <a class="nav-link js-scroll-trigger text-info" href="about.html">Резюме</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="maps.html">Карта</a>
+          <a class="nav-link js-scroll-trigger active" href="maps.html">Карта</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-info" href="timer.html">Таймер</a>
+          <a class="nav-link js-scroll-trigger text-info" href="timer.html">Таймер</a>
         </li>
       </ul>
     </div>
@@ -168,44 +83,57 @@
   </nav>
   <!-- боковая навигация out -->
   
-  <div class="container-fluid" style = "padding-left:300px;">
+  <div class="container-fluid p-0">
       <!-- <div class="navbar bg-dark " id="sideNav" style = "width:100%;"> -->
+	  
+		
+	  <!-- </div> -->
+
+      	<section class="resume-section p-3 p-lg-5 d-flex align-items-top">  
+			<div class = "w-100 text-secondary">
+				<span class = "text-info" >Место проживания отмечено на карте..</span>
+						
+				<div id="my_maps" >
+			
+				</div>
+			</div>	
+				
+		</section>	
+		
 		<div id="p_prldr">
 			<div class="contpre">
 				<span class="txt_anm">
 					<div class = "spinner-border text-info" ></div><br>
-					<h4 style = "letter-spacing:0.3px;">Идет загрузка..</h4></span>
+					<h4 style = "letter-spacing:0.3px;">Идет загрузка..</h4>
+				</span>
 			</div>
 		</div>
-	  <!-- </div> -->
-
-      	  
-		<h3 class = "text-info" style = "padding:40px 0 0 40px;">Место проживания отмечено на карте..</h3>
-		<div id="my_maps" style = "display:none;">
-		
-		</div>
-	
-		<script type="text/javascript">
-       
-        function initMap() {
-		var map;
-            map = new google.maps.Map(document.getElementById('my_maps'), {
-                center: {lat: 56.762531, lng: 37.138491},
-                zoom: 18
-            });
+   </div>		
+					
+				
 			
-			var marker = new google.maps.Marker({
-						position: {lat: 56.762531, lng: 37.138491},
-						map: map,
-						title: 'Home'
-			});
-        }
-    </script>
+		
+			<script type="text/javascript">
+       
+					function initMap() {
+					var map;
+						map = new google.maps.Map(document.getElementById('my_maps'), {
+							center: {lat: 56.762531, lng: 37.138491},
+							zoom: 18
+						});
+						
+						var marker = new google.maps.Marker({
+									position: {lat: 56.762531, lng: 37.138491},
+									map: map,
+									title: 'Home'
+						});
+					}
+			</script>
 	
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wFCN-G6gcarMGhWTXHj4XITWfIJEWDY&callback=initMap"></script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wFCN-G6gcarMGhWTXHj4XITWfIJEWDY&callback=initMap"></script>
 
   
-  </div>
+  
 
 </body>
 </html>
